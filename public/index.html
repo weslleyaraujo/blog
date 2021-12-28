@@ -1,14 +1,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>"
+    />
     <meta name="viewport" content="width=device-width" />
-    <title>Weslley Araujo</title>
+    <title>Weslley Araujo - Software Engineer</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300&display=swap");
       :root {
-        --colors-backround: #fff;
-        --colors-primary: #6b46c1;
+        --colors-background: #fff;
+        --colors-primary: #2d9cdb;
         --colors-foreground-primary: #2d3748;
         --colors-foreground-secondary: #cbd5e0;
 
@@ -16,16 +19,23 @@
         --spacing-medium: 8px;
         --spacing-large: 12px;
       }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --colors-background: #1d222d;
+          --colors-foreground-primary: #f2f2f2;
+          --colors-foreground-secondary: #9a99a2;
+        }
+      }
       * {
         box-sizing: border-box;
       }
       body,
       html {
-        background-color: var(--colors-bakground);
+        background-color: var(--colors-background);
         margin: 0;
         padding: var(--spacing-medium);
         height: 100%;
-        font-family: "IBM Plex Mono", monospace;
+        font-family: "IBM Plex Sans", sans-serif;
         font-size: 16px;
         line-height: 1.625;
         font-weight: 400;
@@ -70,8 +80,9 @@
         and building software at scale for both the web and mobile.
       </p>
       <p>
-        I work at Shopify as a Senior Frontend Engineer, my team is responsible
-        for taking care of the products section for merchants on the platform.
+        I work at <a href="https://shopify.com">Shopify</a> as a Senior Frontend
+        Engineer, my team is responsible for taking care of the products section
+        for merchants on the platform.
       </p>
       <p>
         Before that, I’ve spent 5 years at
@@ -103,4 +114,30 @@
       </p>
     </main>
   </body>
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "https://www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-58111220-1", "auto");
+    ga("send", "pageview");
+  </script>
+  <!-- End Google Analytics -->
 </html>
